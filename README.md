@@ -212,7 +212,9 @@ https://www.repeato.app/optimal-placement-of-test-data-for-automated-testing-wit
 
 # 4. Package checks
 
-While not unit testing, R provides checks for package consistency with the command line command `R CMD check`. The following cause problems for me when running this:
+While not exactly unit testing, R provides checks for package consistency with the command line command `R CMD check`. Some of the things `R CMD check` comes up with are not particularly useful (but most are). But, in particular, I appreciate the checks for object scoping and global variables, which often get missed (by me) when developing functions and tools in R.
+
+The following can cause problems when setting up a new R package:
 
 1. license (1 warning)
 <pre><code>Non-standard license specification:
