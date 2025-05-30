@@ -265,6 +265,10 @@ Unit testing using testthat is automatically run unit tests while checking the p
 |       newPackage_package.R
 |       square.R
 |
++---inst
+|   |
+|   +--- testdata
+|
 \---tests
     |   testthat.R
     |
