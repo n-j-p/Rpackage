@@ -158,6 +158,8 @@ The roxygen specs page (see 2. in references) is outdated. Including the file `n
 </code></pre>
 creates a help page for the package and populates it with information in the `DESCRIPTION` file (see section 1.1).
 
+Alternatively, calling `usethis::use_package_doc(open = rlang::is_interactive())` creates the necessary file. Then, call `devtools::document()` to populate the .Rd man page.
+
 # 3. Setting up testing
 
 Testing can be done with the `testthat` package. Running the following:
