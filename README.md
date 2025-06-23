@@ -127,7 +127,7 @@ Note that the roxygen `@export` command was required. We could omit this for pri
 square <- function(x) power(x, 2)
 </code></pre>
 
-Here `square` is available to the user but `power` is not.
+Here `square` is available to the user but `power` is not. Actually, it is available to the user with three colons, `newPackage:::power`, but can be considered a private function.
 
 
 ## 2.2 Documenting functions
